@@ -1,15 +1,18 @@
+/* Estilos generales */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #f0f8ff; /* Fondo azul claro */
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: #4CAF50; /* Verde vibrante */
     color: white;
     padding: 10px 0;
     text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 nav ul {
@@ -17,6 +20,7 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
+    margin: 0;
 }
 
 nav ul li {
@@ -27,6 +31,11 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffeb3b; /* Amarillo brillante */
 }
 
 main {
@@ -40,19 +49,32 @@ section {
 .profile-card {
     display: flex;
     align-items: center;
-    background: #f4f4f4;
+    background: #fff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.profile-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .profile-card img {
     border-radius: 50%;
     margin-right: 20px;
+    width: 100px;
+    height: 100px;
 }
 
 .profile-info h3 {
     margin: 0;
+    color: #4CAF50;
+}
+
+.profile-info p {
+    margin: 5px 0 0;
 }
 
 .memory-gallery {
@@ -61,19 +83,44 @@ section {
     gap: 20px;
 }
 
-.memory-gallery img {
-    width: 100%;
+.memory-item {
+    background: #fff;
+    padding: 10px;
     border-radius: 8px;
-    transition: transform 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.memory-gallery img:hover {
+.memory-item:hover {
     transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.memory-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.memory-item p {
+    margin: 0;
+    text-align: center;
+    color: #333;
 }
 
 form {
     display: flex;
     flex-direction: column;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+form:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 form label {
@@ -86,6 +133,13 @@ form textarea {
     border: 1px solid #ccc;
     border-radius: 4px;
     margin-bottom: 10px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
 }
 
 form button {
@@ -95,7 +149,7 @@ form button {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s;
 }
 
 form button:hover {
@@ -107,4 +161,7 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
