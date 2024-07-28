@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QRecuerdos - Perfil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>QRecuerdos</h1>
+        <nav>
+            <ul>
+                <li><a href="#perfil">Perfil</a></li>
+                <li><a href="#memorias">Memorias</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="perfil">
+            <h2>Perfil</h2>
+            <div class="profile-card">
+                <img src="images/profile.jpg" alt="Perfil">
+                <div class="profile-info">
+                    <h3>Nombre de la Persona</h3>
+                    <p>Descripción breve del perfil.</p>
+                </div>
+            </div>
+        </section>
+        <section id="memorias">
+            <h2>Memorias</h2>
+            <div class="memory-gallery">
+                <!-- Agrega imágenes y descripciones de recuerdos aquí -->
+            </div>
+        </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 QRecuerdos. Todos los derechos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
